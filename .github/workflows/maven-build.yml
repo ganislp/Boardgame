@@ -1,0 +1,13 @@
+name: Finance Integration Project Java Build
+on:
+   pull_request: 
+     types:
+        - opened
+     branches:
+        - 'feature/*'
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Code   
+            uses: actions/checkout@v4  
